@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>◆はまぐりの殻でつくる！自家製貝殻粉末の作り方◆</title>
+    <style>
+        /* 90年代〜2000年代初頭のWEBスタイル */
+        body {
+            background-color: #ffffff;
+            color: #000000;
+            font-family: "ＭＳ Ｐゴシック", "MS PGothic", "ヒラギノ角ゴ Pro W3", Osaka, sans-serif;
+            margin: 0;
+            padding: 20px 10px;
+            line-height: 1.6;
+            font-size: 14px;
+        }
+
+        /* 全体幅を昔ながらの650px固定風に */
+        .container {
+            max-width: 680px;
+            margin: 0 auto;
+            text-align: left;
+        }
+
+        /* テキストの中央揃え用 */
+        .text-center {
+            text-align: center;
+        }
+
+        /* レトロなフォント設定 */
+        h1 {
+            font-size: 20px;
+            font-family: "ＭＳ 明朝", "MS Mincho", serif;
+            color: #000080;
+            margin-bottom: 5px;
+        }
+
+        h2 {
+            font-size: 16px;
+            background-color: #e6e6e6;
+            border-left: 5px solid #000080;
+            padding: 3px 8px;
+            margin-top: 25px;
+            margin-bottom: 10px;
+        }
+
+        h3 {
+            font-size: 14px;
+            color: #800000;
+            border-bottom: 1px dotted #800000;
+            padding-bottom: 2px;
+        }
+
+        /* リンクスタイル */
+        a:link { color: #0000ff; text-decoration: underline; }
+        a:visited { color: #800080; text-decoration: underline; }
+        a:hover { color: #ff0000; text-decoration: underline; }
+
+        /* カウンター表示 */
+        .counter-box {
+            display: inline-block;
+            background-color: #000000;
+            color: #00ff00;
+            font-family: "Courier New", Courier, monospace;
+            font-weight: bold;
+            padding: 3px 8px;
+            border: 2px inset #ffffff;
+            font-size: 16px;
+            letter-spacing: 2px;
+        }
+
+        /* 注意事項の強調ボックス */
+        .warning-box {
+            border: 2px solid #ff0000;
+            background-color: #ffffcc;
+            padding: 10px;
+            margin: 15px 0;
+            font-size: 13px;
+        }
+
+        /* テーブル（昔ながらの1pxボーダー） */
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 15px 0;
+            font-size: 13px;
+        }
+
+        table, th, td {
+            border: 1px solid #666666;
+        }
+
+        th {
+            background-color: #eeeeee;
+            padding: 5px;
+            text-align: center;
+        }
+
+        td {
+            padding: 5px;
+        }
+
+        /* marquee風テキストアニメーション */
+        .marquee {
+            width: 100%;
+            overflow: hidden;
+            white-space: nowrap;
+            box-sizing: border-box;
+            background: #ffff99;
+            border: 1px dashed #ff9900;
+            padding: 3px;
+            margin: 10px 0;
+            font-size: 12px;
+        }
+
+        .marquee span {
+            display: inline-block;
+            padding-left: 100%;
+            animation: marquee 15s linear infinite;
+        }
+
+        @keyframes marquee {
+            0% { transform: translate(0, 0); }
+            100% { transform: translate(-100%, 0); }
+        }
+
+        /* 点滅テキスト */
+        .blink {
+            animation: blinker 1s linear infinite;
+            color: #ff0000;
+            font-weight: bold;
+        }
+
+        @keyframes blinker {
+            50% { opacity: 0; }
+        }
+
+        /* フッター */
+        footer {
+            margin-top: 40px;
+            border-top: 1px solid #999999;
+            padding-top: 10px;
+            font-size: 11px;
+            color: #666666;
+        }
+
+        /* 掲示板風スタイル */
+        .bbs-item {
+            background: #f9f9f9;
+            border: 1px solid #dddddd;
+            padding: 8px;
+            margin-bottom: 8px;
+            font-size: 12px;
+        }
+
+        .bbs-name {
+            color: #006600;
+            font-weight: bold;
+        }
+
+        .bbs-date {
+            color: #888888;
+            font-size: 11px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <!-- ヘッダーエリア -->
+    <div class="text-center">
+        <p style="font-size: 12px; color: #666666;">〜 自然の恵みを無駄なく再利用！DIY自作ガイド 〜</p>
+        <h1>★ はまぐりの殻で作る！有機粉末（貝殻石灰）の作り方 ★</h1>
+        <hr size="2" color="#000080" width="100%">
+        
+        <p class="blink">※キリ番（5000踏み）報告は掲示板までお願いします！※</p>
+
+        <!-- アクセスカウンター -->
+        <div style="margin: 15px 0;">
+            あなたは <span class="counter-box" id="counter">0004523</span> 人目の訪問者です！（ Since: 2002/04/18 ）
+        </div>
+
+        <!-- マーキー（流れる文字） -->
+        <div class="marquee">
+            <span>【更新情報】2026/03/15：すり鉢での粉砕コツを追加しました！　|　【お願い】当サイトはリンクフリーです。相互リンク募集中！　|　【注意】作業時はマスクの着用をお忘れなく！</span>
+        </div>
+    </div>
+
+    <br>
+
+    <!-- 目次 -->
+    <table style="width: 80%; margin: 0 auto 20px auto; background-color: #f0f8ff;">
+        <tr>
+            <th>目 次</th>
+        </tr>
+        <tr>
+            <td>
+                1. <a href="#sec1">はじめに（貝殻粉末の用途）</a><br>
+                2. <a href="#sec2">必要な道具と材料</a><br>
+                3. <a href="#sec3">【重要】作業前の安全注意</a><br>
+                4. <a href="#sec4">詳しい作り方（手順１〜５）</a><br>
+                5. <a href="#sec5">保管とお手入れについて</a><br>
+                6. <a href="#bbs">一言掲示板（ゲストブック）</a>
+            </td>
+        </tr>
+    </table>
+
+    <!-- 本文セクション -->
+    
+    <h2 id="sec1">１．はじめに（貝殻粉末の用途）</h2>
+    <p>
+        美味しく食べた後の「はまぐりの殻」、捨ててしまっていませんか？<br>
+        はまぐりの殻は主成分が炭酸カルシウムでできており、しっかり処理して粉末にすることで、家庭菜園の<b>土壌酸度調整（貝殻石灰）</b>や、お掃除用の研磨剤、クラフト素材として大活躍します！<br>
+        市販の有機肥料を買わずに、エコで環境にやさしい粉末を手作りしてみましょう。
+    </p>
+
+    <h2 id="sec2">２．必要な道具と材料</h2>
+    <p>作業を始める前に、以下の道具を揃えておきましょう。</p>
+
+    <table>
+        <tr>
+            <th width="30%">分類</th>
+            <th>必要なもの</th>
+        </tr>
+        <tr>
+            <td align="center"><b>材料</b></td>
+            <td>はまぐりの殻（適量）</td>
+        </tr>
+        <tr>
+            <td align="center"><b>洗浄・加熱</b></td>
+            <td>鍋、水、洗剤、トング（または箸）</td>
+        </tr>
+        <tr>
+            <td align="center"><b>破砕・粉砕</b></td>
+            <td>厚手の布（使わなくなったタオル等）、金槌（ハンマー）、すり鉢＆すりこぎ（または強靭な電動ミル）</td>
+        </tr>
+        <tr>
+            <td align="center"><b>選別・保護</b></td>
+            <td>目の細かい網（粉ふるい・茶こし）、<b>防塵マスク</b>、<b>保護メガネ</b>、軍手</td>
+        </tr>
+    </table>
+
+    <h2 id="sec3">３．【重要】作業前の安全注意</h2>
+    <div class="warning-box">
+        <b style="color: #ff0000;">【注意！】必ずお読みください</b><br>
+        <ul>
+            <li>貝殻を砕く際、目に見えないほど細かな破片や粉塵が飛び散ります。<b>必ず防塵マスクと保護メガネ（ゴーグル）を着用</b>してください。</li>
+            <li>硬い殻を破砕するため、周りに人がいない安全な場所（屋外推奨）で作業を行ってください。</li>
+            <li>子供の手の届かない場所で作業および保管を行ってください。</li>
+        </ul>
+    </div>
+
+    <h2 id="sec4">４．詳しい作り方（手順１〜５）</h2>
+
+    <h3>◆ 手順１：洗浄と煮沸（塩分・タンパク質の除去）</h3>
+    <p>
+        まずは殻に付着した泥や身の残り、塩分をキレイに取り除きます。<br>
+        1. 水で表面の汚れをタワシ等でよく洗います。<br>
+        2. 鍋に水とはまぐりの殻を入れ、<b>15分〜20分程度煮沸消毒</b>します。<br>
+        <font color="#800000">※ここを怠ると、後で生臭さの原因や虫が湧く原因になります！</font>
+    </p>
+
+    <h3>◆ 手順２：乾燥（水分を完全に飛ばす）</h3>
+    <p>
+        煮沸が終わったらトングで取り出し、風通しの良い日当たりの良い場所で<b>2〜3日間天日干し</b>にします。<br>
+        中までしっかり乾燥させることで、殻が脆くなり、粉砕しやすくなります。
+    </p>
+
+    <h3>◆ 手順３：粗砕き（ハンマーで叩く）</h3>
+    <p>
+        乾燥した殻を厚手の布や不要になったタオル（2重にすると安全）で包みます。<br>
+        コンクリートの床などの堅い場所の上に置き、上から金槌（ハンマー）でトントンと叩いて、細かく砕いていきます（数ミリ〜1cm程度の大きさになるまで）。<br>
+        <font color="#006600">★コツ：袋に入れると破れて飛び散るので、布でしっかり包むのがポイントです！</font>
+    </p>
+
+    <h3>◆ 手順４：すり鉢・ミルでの細粉砕</h3>
+    <p>
+        粗く砕いた貝殻を<b>「すり鉢」</b>に移し、すりこぎで円を描くように体重をかけてすり潰していきます。<br>
+        ※電動ミル（ミルサー）を使用する場合は、刃が痛む可能性があるため、石臼・貝殻対応のものか確認してからご使用ください。
+    </p>
+
+    <h3>◆ 手順５：篩い（ふるい）分け</h3>
+    <p>
+        すり潰した粉を「粉ふるい」や「茶こし」に通します。<br>
+        網を通らなかった大きな粒は、再度すり鉢に戻して擦り潰します。<br>
+        きめ細やかなパウダー状になったら<b>完成です！</b>
+    </p>
+
+    <div class="text-center" style="margin: 20px 0; padding: 10px; border: 1px dashed #000080;">
+        <span style="font-size: 16px; font-weight: bold; color: #000080;">✨ さらさら自作貝殻パウダーの完成！ ✨</span><br>
+        <small>（畑に撒く場合は、土に混ぜて1〜2週間ほど置いてから植え付けを行いましょう）</small>
+    </div>
+
+    <h2 id="sec5">５．保管とお手入れについて</h2>
+    <p>
+        完成した粉末は、湿気を吸わないように密閉容器（タッパーやジャムの空き瓶等）に入れて、乾燥剤（シリカゲル）と一緒に保存してください。<br>
+        直射日光の当たらない涼しい場所に保管すれば、長期間使用できます。
+    </p>
+
+    <hr size="1" color="#cccccc" style="margin-top: 30px;">
+
+    <!-- 簡易BBS（掲示板）風エリア -->
+    <h2 id="bbs">６．一言掲示板（ゲストブック）</h2>
+    <p>感想やキリ番報告など、お気軽に書き込んでくださいね！</p>
+
+    <form onsubmit="addMessage(event)" style="background: #eee; padding: 10px; border: 1px solid #ccc; margin-bottom: 15px;">
+        <table style="border: none; margin: 0;">
+            <tr style="border: none;">
+                <td style="border: none; width: 80px;">お名前:</td>
+                <td style="border: none;"><input type="text" id="bbs-name" required style="width: 150px;"></td>
+            </tr>
+            <tr style="border: none;">
+                <td style="border: none;">コメント:</td>
+                <td style="border: none;"><input type="text" id="bbs-msg" required style="width: 80%;"></td>
+            </tr>
+            <tr style="border: none;">
+                <td style="border: none;"></td>
+                <td style="border: none;"><input type="submit" value="送信する"> <input type="reset" value="リセット"></td>
+            </tr>
+        </table>
+    </form>
+
+    <div id="bbs-list">
+        <div class="bbs-item">
+            <span class="bbs-name">管理人★ハマさん</span> <span class="bbs-date">(2026/03/01 14:22)</span><br>
+            当サイトへようこそ！はまぐりの時期ですね。殻は捨てずに有効利用しましょう〜。
+        </div>
+        <div class="bbs-item">
+            <span class="bbs-name">ガーデニング好き主婦</span> <span class="bbs-date">(2026/02/15 09:10)</span><br>
+            いつも参考にしています！ハンマーで叩く作業、ストレス解消にもなって良いですね笑
+        </div>
+    </div>
+
+    <hr size="1" color="#000080" style="margin-top: 30px;">
+
+    <!-- バナー・リンクエリア -->
+    <div class="text-center" style="margin: 20px 0;">
+        <p style="font-size: 11px;">当サイトの同盟・バナー（直リンク推奨）</p>
+        <div style="border: 2px outset #ffffff; background: #000; color: #fff; display: inline-block; padding: 5px 15px; font-weight: bold; font-family: sans-serif; font-size: 12px;">
+            ◆ はまぐり粉末同盟 ◆<br>
+            <span style="font-size: 9px; color: #aaa;">88px × 31px</span>
+        </div>
+    </div>
+
+    <!-- フッター -->
+    <div class="text-center">
+        <a href="#">[ ページトップへ戻る ]</a><br><br>
+        <footer>
+            Copyright(C) 2002-2026 "はまぐりの殻でつくる！自家製貝殻粉末の作り方" All Rights Reserved.<br>
+            掲載情報の無断転載を禁じます。
+        </footer>
+    </div>
+
+</div>
+
+<!-- レトロインタラクティブ用 JavaScript -->
+<script>
+    // ページロード時にカウンターを微増させる演出
+    window.onload = function() {
+        var counterEl = document.getElementById('counter');
+        var count = parseInt(counterEl.innerText);
+        // ランダムで少しカウントアップ
+        count += Math.floor(Math.random() * 3) + 1;
+        
+        // 7桁ゼロパディング
+        var countStr = count.toString();
+        while (countStr.length < 7) {
+            countStr = "0" + countStr;
+        }
+        counterEl.innerText = countStr;
+    };
+
+    // 簡易掲示板への書き込み処理
+    function addMessage(event) {
+        event.preventDefault();
+        var name = document.getElementById('bbs-name').value;
+        var msg = document.getElementById('bbs-msg').value;
+
+        if(!name || !msg) return;
+
+        var now = new Date();
+        var timeStr = "(" + now.getFullYear() + "/" 
+            + String(now.getMonth() + 1).padStart(2, '0') + "/" 
+            + String(now.getDate()).padStart(2, '0') + " " 
+            + String(now.getHours()).padStart(2, '0') + ":" 
+            + String(now.getMinutes()).padStart(2, '0') + ")";
+
+        var bbsList = document.getElementById('bbs-list');
+        var newItem = document.createElement('div');
+        newItem.className = 'bbs-item';
+        newItem.innerHTML = '<span class="bbs-name">' + escapeHTML(name) + '</span> <span class="bbs-date">' + timeStr + '</span><br>' + escapeHTML(msg);
+
+        bbsList.insertBefore(newItem, bbsList.firstChild);
+
+        // フォームリセット
+        document.getElementById('bbs-name').value = '';
+        document.getElementById('bbs-msg').value = '';
+        
+        alert("メッセージを送信しました！");
+    }
+
+    function escapeHTML(str) {
+        return str.replace(/[&<>'"]/g, 
+            tag => ({
+                '&': '&amp;',
+                '<': '&lt;',
+                '>': '&gt;',
+                "'": '&#39;',
+                '"': '&quot;'
+            }[tag] || tag)
+        );
+    }
+</script>
+
+</body>
+</html>
